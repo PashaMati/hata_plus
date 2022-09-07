@@ -216,66 +216,36 @@ a.skype::before {
     border-radius: 30px;
 }
 
-.action {
-    padding: 55px 0 40px;
-    background-image: url(../img/action-background.jpg);
-    background-size: cover;   
-}
-
-.offer {
-    margin: 0 0 12px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.choice {
-    margin: 0 0 16px;
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
-    font-family: "Arial";
-    text-align: center;
-}
-
-.price {
-    margin: 0;
-    font-size: 24px;
-    color: #fd8300;
-    font-weight: bold;
-    font-family: "Arial";
-    text-align: center;
-}
-
-.price b {
-    font-size: 40px;
-}
-
 .main-info {
-    display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 37px 0;
+    padding: 46px 0;
 }
 
 .about h1 {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
     margin: 0;
 }
 
-.content p {
-    width: 677px;
+.about-p {
     font-size: 14px;
     line-height: 24px;
     color: #666666;
     font-family: "Arial";
+    margin: 0;
+    padding: 25px 0;
+}
+
+.settlement {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+    margin: 0;
+    padding: 26px 0;
 }
 
 .about a {
@@ -292,6 +262,56 @@ a.skype::before {
     text-decoration: none;
 }
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+.table-header th {
+    text-align: left;
+    padding: 11px 20px;
+}
+
+.table-header tr>th:first-child {
+    width: 275px;
+}
+
+.table-header tr>th:last-child,
+.table-main tr>td:last-child {
+    text-align: right;
+}
+
+
+.table-main {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-family: "Arial";
+    background-color: #e4e4ec;
+}
+
+.table-main tr:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.table td {
+    padding: 9px 20px;
+}
+
+.table-main tr+tr>td {
+    border-top: 1px solid #cdcddd;
+}
+
 .border {
     margin: 33px 0;
     border-color: transparent;
@@ -304,6 +324,8 @@ a.skype::before {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin: 0;
+    padding-bottom: 24px;
 }
 
 .projects {
@@ -318,7 +340,8 @@ a.skype::before {
 
 .edm,
 .mon,
-.cal {
+.cal,
+.ric {
     margin: 0 14px;
 }
 
@@ -328,7 +351,8 @@ a.skype::before {
 
 .edm a,
 .mon a,
-.cal a {
+.cal a,
+.ric a {
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
@@ -339,13 +363,15 @@ a.skype::before {
 
 .edm a:hover,
 .mon a:hover,
-.cal a:hover {
+.cal a:hover,
+.ric a:hover {
     text-decoration: underline;
 }
 
 .edm p,
 .mon p,
-.cal p {
+.cal p,
+.ric p {
     width: 220px;
     height: 53px;
     font-size: 13px;
@@ -353,84 +379,6 @@ a.skype::before {
     color: #9999a6;
     font-family: "Arial";
     margin: 0;
-}
-
-.projects-categories {
-    position: sticky;
-    top: 37px;
-    max-width: 220px;
-    width: 100%;
-}
-
-.projects-categories p {
-    padding: 11px 16px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    background-color: #1f1f56;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-}
-
-.projects-categories ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.outside ul {
-    background-color: #cecedd;
-}
-
-.outside li {
-    background-color: #e4e4ec;
-    border-top: 1px solid #cdcddd; 
-}
-
-.outside a {
-    display: block;
-    position: relative;
-    padding: 11px 16px;
-    font-size: 14px;
-    line-height: 24px;
-    color: #25252c;
-    font-family: "Arial";
-    text-decoration: none;
-}
-
-.outside a:after {
-    position: absolute;
-    top: 19px;
-    right: 16px;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-bottom: 1px solid #656565;
-    border-right: 1px solid #656565;
-    transform: rotate(-45deg);
-    transition: all 0.5s ease;
-}
-
-.outside li:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-}
-
-.outside li:hover>a:after {
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg); 
-}
-
-.inside a {
-    color: #666;
-    padding-left: 30px;
-}
-
-.inside li:hover>a {
-    color: #666;
-    background-color: #cecedd;
 }
 
 .belt {
